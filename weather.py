@@ -10,7 +10,9 @@ request_parameters = {
 
 response = requests.get(url="http://api.weatherstack.com/current", params=request_parameters)
 response.raise_for_status()
-city = response.json()['request']['query']
+# print(response.json())
+city = response.json()['location']['name']
 temperature = response.json()['current']['temperature']
+observation_time = response.json()['current']['observation_time']
 
-print(city + ':\t' + str(temperature) + ' Celsius degrees')
+print(city + ':\t' + str(temperature) + ' Celsius degrees, Observation time: ' + observation_time)
