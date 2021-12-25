@@ -36,7 +36,7 @@ def is_night():
 
 def send_mail(email_address):
     sender = 'nguyen.szymonn@gmail.com'
-    password = getpass('password: ')
+    password = getpass('Password: ')
     receiver = email_address
 
     message = MIMEMultipart()
