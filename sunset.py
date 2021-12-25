@@ -1,5 +1,5 @@
 import requests
-from datetime import date, datetime
+from datetime import datetime
 import smtplib
 from getpass import getpass
 from email.mime.multipart import MIMEMultipart
