@@ -5,8 +5,6 @@ from getpass import getpass
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
-from requests.sessions import Session
-
 def get_sunset():
 
     request_parameters = {
